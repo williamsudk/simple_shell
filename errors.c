@@ -23,7 +23,7 @@ void _eputs(char *str)
  * _eputchar - Function that writes the character c to stderr
  * @c: Parameter for the character to print
  *
- * Return: On success 1.
+ * Return: 1 On success.
  * On error, -1 is returned, and errno is set appropriately.
  */
 int _eputchar(char c)
@@ -46,7 +46,7 @@ int _eputchar(char c)
  * @c: Parameter for the character to print
  * @fd: Parameter for the filedescriptor to write to
  *
- * Return: On success 1.
+ * Return: 1 On success.
  * On error, -1 is returned, and errno is set appropriately.
  */
 int _putfd(char c, int fd)
@@ -69,7 +69,7 @@ int _putfd(char c, int fd)
  * @str: Parameter for the string to be printed
  * @fd: Parameter for the filedescriptor to write to
  *
- * Return: the number of chars put
+ * Return: Number of chars put
  */
 int _putsfd(char *str, int fd)
 {

@@ -3,8 +3,8 @@
 /**
  * _erratoi - Function that converts a string to an integer
  * @s: Parameter for the string to be converted
- * Return: 0 if no numbers in string, converted number otherwise
- * -1 on error
+ * Return: If no numbers in string 1, converted number otherwise
+ * on error -1
  */
 int _erratoi(char *s)
 {
@@ -50,8 +50,7 @@ void print_error(info_t *info, char *estr)
  * print_d - Function that prints a decimal (integer) number (base 10)
  * @input: Parameter for the input
  * @fd: Parameter for the filedescriptor to write to
- *
- * Return: number of characters printed
+ * Return: The number of char printed
  */
 int print_d(int input, int fd)
 {
@@ -124,7 +123,6 @@ char *convert_number(long int num, int base, int flags)
 /**
  * remove_comments - Function that replaces first instance of '#' with '\0'
  * @buf: Parameter for address of the string to modify
- *
  * Return: Always 0;
  */
 void remove_comments(char *buf)

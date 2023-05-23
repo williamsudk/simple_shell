@@ -2,7 +2,7 @@
 
 /**
  * _myenv - Function that prints the current environment
- * @info: Parameter for structure containing potential arguments. Used to maintain
+ * @info: Parameter for structure containing potential arguments. To maintain
  * constant function prototype.
  * Return: Always 0
  */
@@ -14,9 +14,8 @@ int _myenv(info_t *info)
 
 /**
  * _getenv - Function that gets the value of an environ variable
- * @info: Parameter for structure containing potential arguments. Used to maintain
+ * @info: Parameter for structure containing potential arguments. To maintain
  * @name: Parameter for name
- *
  * Return: the value
  */
 char *_getenv(info_t *info, const char *name)
@@ -37,9 +36,9 @@ char *_getenv(info_t *info, const char *name)
 /**
  * _mysetenv - Function that initialize a new environment variable,
  * or modify an existing one
- * @info: Parameter for structure containing potential arguments. Used to maintain
+ * @info: Parameter for structure containing potential arguments. To maintain
  * constant function prototype.
- *  Return: Always 0
+ *  Return: 0 always
  */
 int _mysetenv(info_t *info)
 {
@@ -55,9 +54,9 @@ int _mysetenv(info_t *info)
 
 /**
  * _myunsetenv - Function that remove an environment variable
- * @info: Parameter for structure containing potential arguments used to maintain
+ * @info: Parameter for structure containing potential arguments. To maintain
  * constant function prototype.
- * Return: Always 0
+ * Return: 0 Always
  */
 int _myunsetenv(info_t *info)
 {
@@ -76,9 +75,9 @@ int _myunsetenv(info_t *info)
 
 /**
  * populate_env_list - Function that populates env linked list
- * @info: Parameter for structure containing potential arguments used to maintain
+ * @info: Parameter for structure containing potential arguments. To maintain
  * constant function prototype.
- * Return: Always 0
+ * Return: 0 Always
  */
 int populate_env_list(info_t *info)
 {
