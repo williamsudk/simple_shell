@@ -36,7 +36,10 @@ char *_strdup(const char *str)
 	if (str == NULL)
 		return (NULL);
 
-	size_t length = strlen(str);
+	size_t length;
+
+	length = strlen(str);
+
 	char *ret = malloc((length + 1) * sizeof(char));
 
 	if (ret == NULL)
@@ -54,10 +57,11 @@ char *_strdup(const char *str)
  */
 void _puts(char *str)
 {
+	int i = 0;
+
 	if (str == NULL)
 		return;
 
-	int i = 0;
 
 	while (str[i] != '\0')
 	{

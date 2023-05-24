@@ -92,6 +92,7 @@ int find_builtin(info_t *info)
 void find_cmd(info_t *info)
 {
 	char *path = NULL;
+	int i, k;
 
 	info->path = info->argv[0];
 	if (info->linecount_flag == 1)
@@ -100,7 +101,6 @@ void find_cmd(info_t *info)
 		info->linecount_flag = 0;
 	}
 
-	int i, k;
 
 	for (i = 0, k = 0; info->arg[i]; i++)
 	{
