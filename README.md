@@ -2,7 +2,6 @@
 
 
 
-
 0.Betty would be proud:
 A beautiful code that passes betty check.
 

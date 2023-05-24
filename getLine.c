@@ -6,7 +6,7 @@
  * @buf: Parameter for address of buffer
  * @len: Parameter address of len var
  *
- * Return: bytes read
+ * Return: Read bytes
  */
 ssize_t input_buf(info_t *info, char **buf, size_t *len)
 {
@@ -47,8 +47,7 @@ ssize_t input_buf(info_t *info, char **buf, size_t *len)
 /**
  * get_input - Function that gets a line minus the newline
  * @info: parameter struct
- *
- * Return: bytes read
+ * Return: Read bytes
  */
 ssize_t get_input(info_t *info)
 {
@@ -159,7 +158,6 @@ int _getline(info_t *info, char **ptr, size_t *length)
 /**
  * sigintHandler - Function that blocks ctrl-C
  * @sig_num: Parameter for the signal number
- *
  * Return: void
  */
 void sigintHandler(__attribute__((unused))int sig_num)

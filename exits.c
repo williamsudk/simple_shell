@@ -5,7 +5,7 @@
  *@dest: Parameter for the destination string to be copied to
  *@src: Parameter for the source string
  *@n: Parameter for the amount of characters to be copied
- *Return: The concatenated string
+ *Return: Concatenated string
  */
 char *_strncpy(char *dest, char *src, int n)
 {
@@ -35,7 +35,7 @@ char *_strncpy(char *dest, char *src, int n)
  *@dest: Parameter for the first string
  *@src: Parameter for the second string
  *@n: Parameter for the amount of bytes to be maximally used
- *Return: the concatenated string
+ *Return: Concatenated string
  */
 char *_strncat(char *dest, char *src, int n)
 {
