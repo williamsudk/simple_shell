@@ -164,3 +164,18 @@ int replace_vars(info_t *info)
 
 	return (1);
 }
+
+
+/**
+ * replace_string - this replaces string.
+ * @old: Address of old string to replace
+ * @new: the new string.
+ *
+ * Return: 1 if replaced, or 0 otherwise.
+ */
+int replace_string(char **old, char *new)
+{
+	free(*old);
+	*old = new;
+	return (1);
+}
