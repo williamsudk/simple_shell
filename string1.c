@@ -33,14 +33,14 @@ char *_strcpy(char *dest, char *src)
  */
 char *_strdup(const char *str)
 {
+	char *ret;
+	size_t length;
+
 	if (str == NULL)
 		return (NULL);
 
-	size_t length;
-
 	length = strlen(str);
-
-	char *ret = malloc((length + 1) * sizeof(char));
+	ret = malloc((length + 1) * sizeof(char));
 
 	if (ret == NULL)
 		return (NULL);
